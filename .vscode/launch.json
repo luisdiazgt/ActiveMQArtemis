@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ClienteApplication<cliente>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.cliente.ClienteApplication",
+            "projectName": "cliente",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServidorApplication<servidor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.servidor.ServidorApplication",
+            "projectName": "servidor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

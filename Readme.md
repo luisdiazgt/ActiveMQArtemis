@@ -10,14 +10,14 @@ El repositorio contiene 2 proyectos, el cliente que genera un mensaje hacia el b
 # Prerequisito(s)
 
 - Docker
-- ActiveMQ
+- ActiveMQ(Artemis)
 
 # Docker
 
 Ejecutar el siguiente comando en docker.
 
 ```
-    docker run -d --hostname localhost --name rabbitmq -p 5672:5672 -p 5673:5673 -p 15672:15672 rabbitmq:3-management
+    docker run -e AMQ_USER=admin -e AMQ_PASSWORD=admin -p 61616:61616 -p 8161:8161 --name artemis quay.io/artemiscloud/activemq-artemis-broker:dev.latest
 ```
 
 Consola administrativa: http://localhost:8161/console/auth/login \
